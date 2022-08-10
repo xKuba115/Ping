@@ -14,7 +14,6 @@ def check(adress):
     else:
         return 0
      
-
 for ip in ip_list:
     if check(ip)==0:
         print(f"Adress {ip} is Invalid ")
