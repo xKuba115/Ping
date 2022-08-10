@@ -11,7 +11,6 @@ ip_list = ip1
 def check(adress):
     if(re.search(regex, adress)):
         return 1
-         
     else:
         return 0
      
