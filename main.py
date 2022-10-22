@@ -5,7 +5,7 @@ import re
 regex = "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$"
 i=0
 x=0
-ip1 = input (f"Input ID, if many, split with ',' \n")
+ip1 = input (f"Input IP. If many, split with ',' \n")
 ip1 = ip1.replace(" ","")
 ip1=ip1.split(',')
 ip_list = ip1
@@ -25,6 +25,7 @@ if x!=0:
 elif x==0:
     while True:
         i=0
+        print("Pinging device.. do not close the window")
         for ip in ip_list:
 
             file = open(f"{ip_list[i]} Ping.txt", 'a')
